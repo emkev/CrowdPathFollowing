@@ -13,13 +13,14 @@ class Vehicle {
 
   Vehicle(PVector l)
   {
+    r = 3.0 ; 
+    maxSpeed = 2.0 ; 
+    maxForce = 0.1 ; 
+
     location = l.get() ; 
     velocity = new PVector(maxSpeed , 0) ; 
     acceleration = new PVector(0 , 0) ; 
 
-    r = 3.0 ; 
-    maxSpeed = 2.0 ; 
-    maxForce = 0.1 ; 
   }
 
   void run() {
